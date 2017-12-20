@@ -1,5 +1,5 @@
 /**
-* Package for calculate task.
+* //Package for calculate task.
 *
 * @author George Almazov (try_again34@tuta.io)
 * @version $Id$
