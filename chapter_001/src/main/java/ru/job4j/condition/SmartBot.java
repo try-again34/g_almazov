@@ -13,12 +13,11 @@ public class SmartBot {
 	public String answer (String question) {
 		String result;
 		
-		if ("Привет,Бот".equals(question)) {
+		if ("Привет,Бот".equals(question)) 
 			result = "Привет, умник";
-		} else if("Пока".equals(question))
+		else if("Пока".equals(question))
 			result = "До скорой встречи";
-		else
+		else 
 			result = "Это ставит меня в тупик. Спросите другой вопрос.";
 		return result;
-	}
 }
