@@ -16,22 +16,16 @@ public double area() {
     double bc = this.b.distanceTo(this.c);
     double p = this.period(ab, ac, bc);
     if (this.exist(ab, ac, bc)) 
+	// написать формулу для расчета площади треугольника.
+	rsl = math.sqrt(p(p-a)(p-b)(p-c)/2);
     return rsl;
 }
 }
 
-/**
-* Метод проверяет можно ли построить треугольник с такими длинами сторон.
-* 
-* Подумайте какое надо написать условие, чтобы определить можно ли построить треугольник.
-* 
-* @param ab Длина от точки a b. 
-* @param ac Длина от точки a c.
-* @param bc Длина от точки b c.
-* @return
-*/
 //метод exist проверяет условие, возможно ли построение треугольника
 private boolean exist(double ab, double ac, double bc) {
-   double checkTriangle = a+b>c && b+c>a && c+a>b ? math.sqrt(p(p-a)(p-b)(p-c)/2) : -1;
-   return checkTriangle;
+   if (a+b>c && b+c>a && c+a>b);
+		return true;
+	else
+		return false;
 }
