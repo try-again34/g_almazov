@@ -25,7 +25,5 @@ public double area() {
 //метод exist проверяет условие, возможно ли построение треугольника
 private boolean exist(double ab, double ac, double bc) {
    if (a+b>c && b+c>a && c+a>b);
-		return true;
-	else
-		return false;
+		return;
 }
